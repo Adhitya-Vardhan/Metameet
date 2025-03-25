@@ -4,6 +4,8 @@ import  client  from "@repo/db/client"
 
 const app = express()
 
+app.use(express.json())
+
 //using router to structure the apis of specific route in a specific folders
 app.use("/api/v1",router)
 
